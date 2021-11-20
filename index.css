@@ -460,6 +460,9 @@ textarea{
         text-align: center;
         width:100%;
     }
+    .project__img{
+        filter: brightness(50%);
+    }
     .contact__form{
         display:grid;
         grid-template-areas: 'name name name name'
