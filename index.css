@@ -82,6 +82,8 @@ textarea{
     
 }
 
+
+
 .navbar{
     z-index: 10;
     box-shadow: -20px 20px 60px #1F1F1F, 20px -20px 60px #2B2B2B;
@@ -355,6 +357,7 @@ textarea{
     padding:0;
     grid-area:desc;
     width:100%;
+    line-height: 150%;
 }
 
 .project__btn{
@@ -474,6 +477,9 @@ textarea{
                              'txtarea txtarea txtarea txtarea'
                              'submitbtn submitbtn submitbtn submitbtn';
         gap:1rem;
+    }
+    .contact-container{
+        width:80vh;
     }
  }
 
