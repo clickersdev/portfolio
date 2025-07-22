@@ -63,25 +63,38 @@ a,
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(0,200,150,0.18);
+  background: rgba(0, 200, 150, 0.18);
   border: 2px solid var(--clr-accent);
   pointer-events: none;
   z-index: 10001;
-  transition: background 0.2s, border 0.2s, mix-blend-mode 0s, width 0.2s, height 0.2s;
+  transition: background 0.2s, border 0.2s, mix-blend-mode 0s, width 0.2s,
+    height 0.2s;
   mix-blend-mode: exclusion;
-  transform: translate3d(calc(var(--mouse-x) - 14px), calc(var(--mouse-y) - 14px), 0);
+  transform: translate3d(
+    calc(var(--mouse-x) - 14px),
+    calc(var(--mouse-y) - 14px),
+    0
+  );
 }
 
 .custom-cursor.cursor-small {
   width: 12px;
   height: 12px;
-  transform: translate3d(calc(var(--mouse-x) - 6px), calc(var(--mouse-y) - 6px), 0);
+  transform: translate3d(
+    calc(var(--mouse-x) - 6px),
+    calc(var(--mouse-y) - 6px),
+    0
+  );
 }
 
 .custom-cursor.cursor-clicked {
   width: 8px;
   height: 8px;
-  transform: translate3d(calc(var(--mouse-x) - 4px), calc(var(--mouse-y) - 4px), 0);
+  transform: translate3d(
+    calc(var(--mouse-x) - 4px),
+    calc(var(--mouse-y) - 4px),
+    0
+  );
   background: var(--clr-accent);
   border-color: var(--clr-accent);
 }
@@ -271,7 +284,6 @@ textarea {
 }
 
 .hero__text-group {
-  
   gap: 0.6em;
   margin-bottom: 0;
   max-width: 600px;
@@ -353,7 +365,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   width: 350px;
-  min-height: 420px;
+  height: 420px;
   margin: 0 1rem 2rem 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: left;
@@ -399,7 +411,21 @@ textarea {
   color: #d1d1d1;
   margin: 0 1rem 1.5rem 1rem;
   line-height: 1.6;
-  flex: 1;
+  
+  position: relative;
+  max-height: 10em; /* Approximately 6 lines of text (1.6 * 6) */
+  overflow: hidden;
+}
+
+.project__desc::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 6em; /* Increased height to make the fade more noticeable */
+  background: linear-gradient(to bottom, rgba(35, 39, 47, 0) 70%, rgba(35, 39, 47, 1) 100%);
+  pointer-events: none; /* Allows text selection through the overlay */
 }
 
 .project__btn {
@@ -657,7 +683,7 @@ textarea {
   .subsection.contact__container {
     max-width: 98vw;
     min-width: unset;
-    padding: 1.2rem 0.5rem;
+    padding: 1.2rem 1.5rem;
   }
 }
 
@@ -863,6 +889,7 @@ textarea {
 }
 
 .project-modal {
+  font-size: 1.5rem;
   background: rgba(30, 32, 38, 0.98);
   border-radius: 24px;
   box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.35);
@@ -877,7 +904,8 @@ textarea {
   overflow-y: auto;
   transform: scale(0.95) translateY(20px);
   opacity: 0;
-  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .project-modal-overlay.active .project-modal {
@@ -949,7 +977,7 @@ textarea {
   align-items: flex-start;
 }
 .project-modal__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--clr-accent);
   font-weight: 700;
   margin-bottom: 0.5em;
