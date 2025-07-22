@@ -1,152 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href='index.css' rel='stylesheet'>
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    </head>
-    <body>
-        <nav class="navbar" id = "nav">
-            <ul class="navbar__ul">
-                <li class="navbar__li"><a href="#home" class="navbar__a">Home</a></li>
-                <li class="navbar__li"><a href="#about" class="navbar__a">About</a></li>
-                <li class="navbar__li"><a href="#skills" class="navbar__a">Skills</a></li>
-                <li class="navbar__li"><a href="#projects" class="navbar__a">Projects</a></li>
-                <li class="navbar__li"><a href="#contact" class="navbar__a">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="index.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar" id="nav">
+      <ul class="navbar__ul">
+        <li class="navbar__li"><a href="#home" class="navbar__a">Home</a></li>
+        <li class="navbar__li">
+          <a href="#projects" class="navbar__a">Projects</a>
+        </li>
+        <li class="navbar__li">
+          <a href="#contact" class="navbar__a">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-        <section class="hero section" id = "home">
-            <h1 class="hero__title" data-aos="fade" data-aos-duration="1000">
-                Hey,
-                <br>
-                I'm <span class="orange-text">clickers</span>
-            </h1>
+    <section class="hero section" id="home">
+      <div class="hero__text-group">
+        <h1 class="hero__title blur-animate">
+          <span class="blur-word">Hi,</span> <span class="blur-word">I'm</span>
+          <span class="blur-word">Çağan</span>
+        </h1>
+        <h2 class="hero__title--secondary blur-animate">
+          A web developer who is obsessed with clean design and minimal code.
+        </h2>
+      </div>
+    </section>
 
-            <h2 class="hero__title--secondary" data-aos="fade-up" data-aos-delay="1000">
-                a <span class="aqua-text">front-end web developer</span> 
-                <br>
-                who <em>loves</em> programming
-            </h2>
-        </section>
-
-        <section class="about section" id="about">
-            <h2 class="section__title" data-aos = "fade-up">About</h2>
-            <p class="section__desc" data-aos = "fade-up" data-aos-delay="50">Me. Just me.</p>
-            <div class="about__grid" data-aos = "fade-right" data-aos-delay="200" >
-                <div class="about--image subsection">
-                    <img src="img/rsz_cropped.jpg" alt="placeholder" class = "about--image--img">
-                </div>
-                <div class="subsection about--personal-info">
-                    <h2 class = "aqua-text about__title">Personal Information</h2>
-                    <p class="item">Real Name: Tarik Kaya</p>
-                    <p class="item" style="background-color:#8c0002">Birth Date: REDACTED</p>
-                    <p class="item" style= "background-color:#8c0002">Age: REDACTED</p>
-                    <p class="item">Contact Email Adress: clickers331@gmail.com</p>
-                    <p class="item">Location: Turkey</p>
-                </div>
-                <div class="subsection about--bio" >
-                    <h2 class = "aqua-text about__title">Bio</h2>
-                    <p class = "about--bio--text">Hi, I’m Tarik (also known
-                        as clickers). I am someone who simply enjoys the act of coding and is excited about what it can accomplish. I enjoy constantly learning new technologies (currently Vue.js) and using them on my own personal projects. </p>
-                </div>
-                <div class="subsection about--interests">
-                    <h2 class = "aqua-text about__title">Interests and Hobbies</h2>
-                    <div class = "about__grid--row">
-                        <p class="item">Software Engineering</p>
-                        <p class="item">Clean Design</p>
-                        <p class="item">Gaming</p>
-                        <p class="item">Basketball</p>
-                        <p class="item">Mathemathics</p>
-                        <p class="item">Game Development</p>
-                        <p class="item">Learning</p>
-                    </div>
-                </div>
-                <div class="subsection about--education">
-                    <h2 class = "aqua-text about__title">Education</h2>
-                    <p class="item">
-                        The Front-End Developer Career Path
-                        <br>
-                        (<a style = "text-decoration: underline;" href = "https://scrimba.com/learn/frontend" target = "_blank">Scrimba</a>)
-                    </p>
-                    <p class="item">
-                        The Responsive Web Design Cirriculum
-                        <br>
-                        (<a style = "text-decoration: underline;" href = "https://www.freecodecamp.org/learn/responsive-web-design/" target = "_blank">freeCodeCamp</a>)
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class = "section" id = "skills">
-            <h2 class="section__title" data-aos = "fade-up">Skills</h2>
-            <p class="section__desc" data-aos = "fade-up" data-aos-delay="50">Stuff that I know about.</p>
-            <div class = "section__skills__subsections__container" data-aos = "fade-left" data-aos-delay="100">
-                <div class="subsection--skills">
-                    <h2 class="aqua-text" style = "text-align: center; font-size:3rem">Languages and Frameworks</h2>
-                    <div class = "skill__subgrid">
-                        <p class="item skill">Javascript</p>
-                        <p class="item skill">HTML & CSS</p>
-                        <p class="item skill">React.js</p>
-                        <p class="item skill">SCSS & SASS</p>
-                        <p class="item skill">Vue.js</p>
-                        <p class="item skill">Tailwind CSS</p>
-                    </div>
-                </div>
-                <div class="subsection--skills">
-                    <h2 class="aqua-text" style = "text-align: center; font-size:3rem">Software</h2>
-                    <div class = "skill__subgrid">
-                        <p class="item skill">VSCode</p>
-                        <p class="item skill">Figma</p>
-                        <p class="item skill">Photoshop</p>
-                        <p class="item skill">Premiere Pro</p>
-                        <p class="item skill">Git</p>
-                        <p class="item skill">Github</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "section" id = "projects">
-            <h2 class="section__title" data-aos = "fade-up">Projects</h2>
-            <p class="section__desc" data-aos = "fade-up" data-aos-delay="50">Stuff that I poured my code into</p>
-            <div class = "projects__flex--row" data-aos = "fade-right" data-aos-delay="100"> 
-                 <a href="https://clickers331.github.io/Portfolio-Website/"class = "project__container subsection">
-                        <img src="img/portfolio.png" alt="" class = "project__img">
-                        <h2 class = "project__title aqua-text">Portfolio Page</h2>
-                        <p class = "project__desc">A full on portfolio page. Uses Vanilla JS, HTML and Vanilla CSS. Includes my personal information, contact, skills and projects. Fully responsive for mobile screens. Cool stuff.</p>
-                 </a>
-                <a class = "project__container subsection" href="https://clickers331.github.io/MinimalistPomodoro/">
-                    <img src="img/pomodoro.png" alt="" class = "project__img"> 
-                    <h2 class = "project__title aqua-text">Pomodoro Timer</h2>
-                    <p class = "project__desc">Have you ever felt like you were overwhelmed with work? Well fear no more because pomodoro method is here to save you. You work for 25 minutes and take a 5 minute break. That is 1 pomodoro. My website lets you keep track of your 25 and 5 minutes by letting you time yourself. You can customize the work and break durations to your own liking. Uses Vanilla JS, HTML and Vanilla CSS. Truly groundbreaking</p>
-                </a>
-                <div class = "project__container subsection">
-                    <img src="img/weather.jpg" alt="" class = "project__img"> 
-                    <h2 class = "project__title  aqua-text">Weather App</h2>
-                    <p class = "project__desc">In the works, coming soon :)</p>
-                </div>
-                
-            </div>
-        </section>
-        <section class = "section" id = "contact">
-            <h2 class="section__title" data-aos = "fade-up">Contact</h2>
-            <p class="section__desc" data-aos = "fade-up" data-aos-delay="50">Shoot me an email... Or two. Maybe three?</p>
-            <div class = "subsection contact__container" data-aos = "zoom-out" data-aos-delay="100">
-                <form target="_blank" action="https://formsubmit.co/clickers331@gmail.com" class = "contact__form" method="POST"> 
-                    <input type="text" name="name" class="name" placeholder="Full Name" required>
-                    <input type="email" name="email" class="email" placeholder="Email Address" required>
-                    <textarea placeholder="Your Message" class="txtarea" name="message" rows="10" required></textarea>
-                    <button type="submit" class="submit__btn">Send</button>
-                </form>
-            </div>            
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-        <script src = 'index.js' type='text/javascript'></script>
-    </body>
+    <section class="section" id="projects">
+      <h2 class="section__title blur-animate">Projects</h2>
+      <p class="section__desc blur-animate">
+        A showcase of my work and experiments
+      </p>
+      <div class="projects__flex--row blur-animate">
+        <a
+          href="https://clickers331.github.io/Portfolio-Website/"
+          class="project__container subsection"
+        >
+          <img
+            src="img/portfolio.png"
+            alt="Portfolio Website"
+            class="project__img"
+          />
+          <h2 class="project__title aqua-text">Portfolio Page</h2>
+          <p class="project__desc">
+            A full portfolio page built with Vanilla JS, HTML, and CSS. Fully
+            responsive and includes sections for contact, skills, and projects.
+          </p>
+        </a>
+        <a
+          class="project__container subsection"
+          href="https://clickers331.github.io/MinimalistPomodoro/"
+        >
+          <img
+            src="img/pomodoro.png"
+            alt="Pomodoro Timer"
+            class="project__img"
+          />
+          <h2 class="project__title aqua-text">Pomodoro Timer</h2>
+          <p class="project__desc">
+            A minimalist Pomodoro timer to help you focus. Customize work and
+            break durations. Built with Vanilla JS, HTML, and CSS.
+          </p>
+        </a>
+        <div class="project__container subsection">
+          <img src="img/weather.jpg" alt="Weather App" class="project__img" />
+          <h2 class="project__title aqua-text">Weather App</h2>
+          <p class="project__desc">In the works, coming soon :)</p>
+        </div>
+        <!-- Mock projects -->
+        <div class="project__container subsection">
+          <img src="img/pfpyes.jpg" alt="Mock Project 1" class="project__img" />
+          <h2 class="project__title aqua-text">Mock Project 1</h2>
+          <p class="project__desc">
+            This is a placeholder for a future project. Description and details
+            will be added soon.
+          </p>
+        </div>
+        <div class="project__container subsection">
+          <img src="img/pfpyes.jpg" alt="Mock Project 2" class="project__img" />
+          <h2 class="project__title aqua-text">Mock Project 2</h2>
+          <p class="project__desc">
+            This is a placeholder for a future project. Description and details
+            will be added soon.
+          </p>
+        </div>
+        <div class="project__container subsection">
+          <img src="img/pfpyes.jpg" alt="Mock Project 3" class="project__img" />
+          <h2 class="project__title aqua-text">Mock Project 3</h2>
+          <p class="project__desc">
+            This is a placeholder for a future project. Description and details
+            will be added soon.
+          </p>
+        </div>
+        <div class="project__container subsection">
+          <img src="img/pfpyes.jpg" alt="Mock Project 4" class="project__img" />
+          <h2 class="project__title aqua-text">Mock Project 4</h2>
+          <p class="project__desc">
+            This is a placeholder for a future project. Description and details
+            will be added soon.
+          </p>
+        </div>
+        <div class="project__container subsection">
+          <img src="img/pfpyes.jpg" alt="Mock Project 5" class="project__img" />
+          <h2 class="project__title aqua-text">Mock Project 5</h2>
+          <p class="project__desc">
+            This is a placeholder for a future project. Description and details
+            will be added soon.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <h2 class="section__title blur-animate">Contact</h2>
+      <p class="section__desc blur-animate">
+        Let's connect! Send me a message below.
+      </p>
+      <div class="subsection contact__container blur-animate">
+        <form
+          target="_blank"
+          action="https://formsubmit.co/clickers331@gmail.com"
+          class="contact__form"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            class="name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            class="txtarea"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+          <button type="submit" class="submit__btn">Send</button>
+        </form>
+      </div>
+    </section>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
 </html>
