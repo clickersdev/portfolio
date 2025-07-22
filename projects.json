@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Reservator",
+    "image": "img/bkkrandevu.png",
+    "description": "A real-time reservation management system for businesses, allowing users to book, modify, and cancel appointments. Features include user authentication, availability tracking, and admin control panel.",
+    "tech": ["Redux", "React", "Firebase"],
+    "features": [
+      "User authentication",
+      "Availability tracking",
+      "Admin control panel"
+    ],
+    "live": "https://bkk.clickers.dev/",
+    "repo": "https://github.com/clickers331/bkkrandevu"
+  },
+  {
+    "title": "Funbytes",
+    "image": "img/funbytes.jpg",
+    "description": "An introductory computer science book for kids, making complex concepts accessible and fun through engaging stories and interactive examples.",
+    "tech": ["Book", "Education"],
+    "features": [
+      "Engaging stories",
+      "Interactive examples",
+      "Accessible CS concepts"
+    ],
+    "live": null,
+    "repo": "https://github.com/clickers331/funbytes"
+  },
+  {
+    "title": "Portfolio Page",
+    "image": "img/portfolio.png",
+    "description": "A full portfolio page built with Vanilla JS, HTML, and CSS. Fully responsive and includes sections for contact, skills, and projects.",
+    "tech": ["HTML", "CSS", "JS"],
+    "features": [
+      "Fully responsive design",
+      "Contact and project sections",
+      "Modern animations"
+    ],
+    "live": "https://clickers331.github.io/Portfolio-Website/",
+    "repo": "https://github.com/clickers331/Portfolio-Website"
+  },
+  {
+    "title": "Pomodoro Timer",
+    "image": "img/pomodoro.png",
+    "description": "A minimalist Pomodoro timer to help you focus. Customize work and break durations. Built with Vanilla JS, HTML, and CSS.",
+    "tech": ["HTML", "CSS", "JS"],
+    "features": [
+      "Customizable timer",
+      "Minimalist UI",
+      "Mobile friendly"
+    ],
+    "live": "https://clickers331.github.io/Pomodoro-Timer/",
+    "repo": "https://github.com/clickers331/Pomodoro-Timer"
+  },
+  {
+    "title": "Interactive Card Detail Page",
+    "image": "img/cardapp.png",
+    "description": "A responsive web component that displays product or content cards with interactive hover effects and expandable detail views. Designed for use in dashboards, e-commerce pages, or content previews.",
+    "tech": ["JavaScript", "HTML", "CSS"],
+    "features": [
+      "Interactive hover effects",
+      "Expandable detail views",
+      "Responsive design"
+    ],
+    "live": "https://interactivecard.clickers.dev/",
+    "repo": "https://github.com/clickers331/Interactive-Card-Details-Form"
+  }
+]
