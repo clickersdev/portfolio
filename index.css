@@ -27,6 +27,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none !important;
 }
 
 body {
@@ -36,24 +37,78 @@ body {
   padding: 0;
   margin: 0;
   height: fit-content;
-  cursor: url("img/favicon.png") 8 8, pointer;
+  cursor: url("img/favicon.png") 8 8, none !important;
 }
 
 /* Custom smooth cursor fallback */
 @media (pointer: coarse) {
   body {
-    cursor: pointer;
+    cursor: auto !important;
   }
-}
 
-html,
-body,
-input,
-textarea,
-button,
-a,
-* {
-  cursor: none !important;
+  html,
+  body,
+  input,
+  textarea,
+  button,
+  a,
+  * {
+    cursor: auto !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  /* Disable hover effects */
+  .navbar__li:hover {
+    transform: none;
+  }
+
+  .project__container:hover {
+    transform: none;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18); /* Reset to default */
+    border-color: #222; /* Reset to default */
+  }
+
+  .contact__container:hover {
+    transform: none;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12); /* Reset to default */
+  }
+
+  .submit__btn:hover {
+    background: var(--clr-accent); /* Reset to default */
+    color: #151515; /* Reset to default */
+  }
+
+  .experience__item:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Reset to default */
+  }
+
+  .experience__link a:hover {
+    color: var(--clr-accent); /* Reset to default */
+  }
+
+  .project__container:hover .project__overlay {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.98);
+  }
+
+  .project__container:hover .project__overlay::before {
+    opacity: 0;
+  }
+
+  .project-modal__close:hover {
+    color: var(--clr-accent); /* Reset to default */
+  }
+
+  .project-modal__btn:hover {
+    background: var(--clr-accent); /* Reset to default */
+    color: #151515; /* Reset to default */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Reset to default */
+  }
 }
 
 .custom-cursor {
@@ -129,7 +184,7 @@ button {
 }
 
 button:hover {
-  cursor: pointer;
+  cursor: none !important;
 }
 
 input,
@@ -601,7 +656,10 @@ textarea {
     padding: 1.5rem;
   }
   .section__title {
-    margin-bottom: -2rem;
+    margin-bottom: 0.5rem; /* Adjusted to prevent overlap */
+  }
+  .section__desc {
+    margin-top: 0.5rem; /* Added to provide space */
   }
   .about--image-img {
     width: 80vw;
